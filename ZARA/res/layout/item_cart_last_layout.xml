@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp" >
+
+    <TextView
+        android:id="@+id/item_last_cart_tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/cart_pay"
+        android:gravity="center"
+        android:text="结算"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/item_last_cart_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_last_cart_tv_pay"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计：" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_money" />
+
+        <TextView
+            android:id="@+id/item_cart_last_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0(0件)" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_last_cart_ll"
+        android:layout_toLeftOf="@id/item_last_cart_tv_pay"
+        android:text="不含运费" />
+
+</RelativeLayout>

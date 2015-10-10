@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/discoiuntCatagoryFrag_include"
+        layout="@layout/header_text_title" />
+
+    <!-- line -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED" />
+
+    <RadioGroup
+        android:id="@+id/discountCatagoryFrag_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/discountCatagoryFrag_rbtn_trf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="TRF"
+            android:textColor="@drawable/navigation_rb_text_selector" />
+
+        <RadioButton
+            android:id="@+id/discountCatagoryFrag_rbtn_woman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="女士"
+            android:textColor="@drawable/navigation_rb_text_selector" />
+
+        <RadioButton
+            android:id="@+id/discountCatagoryFrag_rbtn_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="男士"
+            android:textColor="@drawable/navigation_rb_text_selector" />
+
+        <RadioButton
+            android:id="@+id/discountCatagoryFrag_rbtn_child"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="儿童"
+            android:textColor="@drawable/navigation_rb_text_selector" />
+    </RadioGroup>
+    <!-- line -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/discountCatagoryFrag_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

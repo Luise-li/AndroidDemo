@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/newFrag_include"
+            layout="@layout/header_text_title" />
+        <!-- the first line -->
+
+        <LinearLayout
+            android:id="@+id/newFrag_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newFrag_include" >
+
+            <FrameLayout
+                android:id="@+id/newFrag_fl_1"
+                android:layout_width="0dp"
+                android:layout_height="185dp"
+                android:layout_weight="1" >
+
+                <!-- android:src="@drawable/new_1" -->
+
+                <ImageView
+                    android:id="@+id/newFrag_iv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:rotation="90"
+                    android:text="Dresses" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="1"
+                    android:text="连衣裙" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/newFrag_fl_2"
+                android:layout_width="0dp"
+                android:layout_height="185dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" >
+
+                <!-- android:src="@drawable/new_2" -->
+
+                <ImageView
+                    android:id="@+id/newFrag_iv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:rotation="90"
+                    android:text="Jeans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="1"
+                    android:text="牛仔裤" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- the second line -->
+
+        <RelativeLayout
+            android:id="@+id/newFrag_rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/newFrag_ll_1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- android:src="@drawable/new_3" -->
+
+                <ImageView
+                    android:id="@+id/newFrag_iv_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <!-- android:src="@drawable/new_4" -->
+
+                    <ImageView
+                        android:id="@+id/newFrag_iv_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!-- android:src="@drawable/new_5" -->
+
+                    <ImageView
+                        android:id="@+id/newFrag_iv_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:rotation="90"
+                    android:singleLine="true"
+                    android:text="Pants&amp;Suits" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="1"
+                    android:text="短裤/套装" />
+            </FrameLayout>
+        </RelativeLayout>
+        <!-- the third line -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/newFrag_rl_2" >
+
+            <!-- android:src="@drawable/new_6" -->
+
+            <ImageView
+                android:id="@+id/newFrag_iv_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <!-- android:src="@drawable/new_7" -->
+
+                <ImageView
+                    android:id="@+id/newFrag_iv_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:rotation="90"
+                    android:text="Boxer Shorts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="1"
+                    android:text="男士短裤" />
+            </FrameLayout>
+            <!-- android:src="@drawable/new_8" -->
+
+            <ImageView
+                android:id="@+id/newFrag_iv_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
